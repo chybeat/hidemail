@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hide Email | ChyBeat</title>
+	<script src="/sctript/run.min.js"></script>
+	<script src="/hidemail.min.js"></script>
+	<link rel="stylesheet" href="/style/styles.min.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h1>E-mail obfuscation</h1>
+			<p><strong>An 'anti-crawler' e-mail detection</strong>(hideMail JavaScript class)</p>
+		</div>
+
+	</header>
+	<main>
+		<section id="mailinfo">
+			<div class="container">
+				<p>
+					Please, Don't SPAM me!:
+					<a id="textChanger" data-function="hideMail" data-hidemail-user="clear" data-hidemail-domain="email.com"></a>
+					<span id="currentHref">Current href: <span>Please move the mouse cursor over email 😉</span></span>
+				</p>
+			</div>
+		</section>
+		<section id="instructions">
+			<div class="container">
+				<h2>Watch the changes</h2>
+				<ol>
+					<li>Right click on e-mail address and click 'inspect'.</li>
+					<li>Move mouse cursor over and away the e-mail address and watch the changes in the inspector.</li>
+					<li>Click or tap to run your default e-mail application. After this you can write an mail to 'clear@email.com'*.</li>
+					<li>Sendme the 'mailto:' address to this <a href="https://github.com/chybeat/hideMail/issues/1">github issue</a>, and tell me how you can beat it!.</li>
+				</ol>
+				<p><sup>* Don't send!.</sup></p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div>Created with 💙 by ChyBeat. &copy; 2024</div>
+	</footer>
+</body>
+
+</html>

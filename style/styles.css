@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #1f1f1f;
+	color: #cdcdcd;
+	font-size: 1.8em;
+}
+
+h1 {
+	margin-bottom: 1.6rem;
+	text-align: center;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+a,
+a:visited {
+	color: #6c9efd;
+}
+
+a:hover {
+	color: #dbb937;
+	text-decoration: underline;
+}
+
+footer {
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+ol {
+	padding: 1em 2em;
+}
+
+ol li {
+	padding: 0.5em 1em;
+}
+
+ol a {
+	display: inline;
+}
+
+header .container {
+	margin: 1.6rem
+}
+
+header .container p {
+	text-align: center;
+}
+
+header .container p strong {
+	display: block;
+}
+
+.container {
+	margin: 1.5em;
+	padding: 0.5rem 1.5rem 1rem;
+}
+
+
+#instructions .container,
+#mailinfo .container {
+	background-color: #2f3234;
+	border-radius: 0.5em;
+	border: 1px solid #5a5a5a;
+}
+
+#instructions {
+	margin: 0 auto;
+	max-width: 28.7em;
+}
+
+#instructions h2 {
+	text-align: center;
+}
+
+#instructions .container {
+	padding: 0.5em;
+	box-shadow: 0 1px 9px 8px #17171852;
+}
+
+#mailinfo a {
+	padding: 1em;
+}
+
+#mailinfo {
+	margin: 0 auto;
+	max-width: 32em;
+}
+
+#mailinfo p {
+	position: relative;
+	text-align: center;
+}
+
+#mailinfo .container {
+	box-shadow: 0 1px 11px 4px #32323485;
+}
+
+#mailinfo #currentHref {
+	display: block;
+	font-size: 1.4rem;
+	left: 0;
+	width: 100%;
+}
+
+#mailinfo #currentHref span {
+	display: block;
+	font-weight: bold;
+	word-wrap: break-word;
+}
+
+@media screen and (max-width: 400px) {
+	body {
+		font-size: 1.8rem;
+	}
+
+	ol {
+		padding: 1em 1em;
+	}
+
+	ol li {
+		padding: .5em;
+	}
+
+	h1 {
+		font-size: 3.1rem;
+	}
+
+	.contianer {
+		margin: 1em;
+	}
+
+	header .container {
+		padding: 0
+	}
+
+	#mailinfo #currentHref span {
+		word-wrap: break-word;
+	}
+}
