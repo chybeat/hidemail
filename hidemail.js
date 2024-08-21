@@ -2,9 +2,9 @@ class hideMail {
 	character_set = ['&#64', '%40', '@'];
 	anchor = '';
 	user = "https://github.com/chybeat/hidemail";
-	domain = "creative commons license CC BY-ND";
+	domain = "creative commons license CC BY-SA";
 	originalHref = "";
-	address = "https://creativecommons.org/licenses/by-nd/4.0/";
+	address = "https://creativecommons.org/licenses/by-sa/4.0/";
 
 	constructor(element) {
 		this.changeHref = this.setHref.bind(this);
@@ -22,7 +22,6 @@ class hideMail {
 			) {
 				this.add(element)
 			} else {
-				//console.log(element.anchor.toString())
 				element.anchor = (element.anchor.outerHTML.toString())
 				let text = "HideEmail configuration object error: ";
 				text += JSON.stringify(element).replace(/\\/g, '')
@@ -80,8 +79,8 @@ class hideMail {
 		}
 	}
 	license() {
-		const cclicense = "CC BY-NC-ND"
-		const ccaddress = 'https://creativecommons.org/licenses/by-nd/4.0/'
+		const cclicense = "CC BY-SA"
+		const ccaddress = 'https://creativecommons.org/licenses/by-sa/4.0/'
 		const creator = "https://github.com/chybeat/hidemail"
 		window.location = ccaddress
 	}
@@ -106,7 +105,6 @@ class hideMail {
 	}
 
 	searchError(el) {
-		//addSidebar({sidebar}) Object Error
 		const errorText = "Configuration error when hidding email: " + el.outerHTML + "";
 		let errorMsg = [];
 
